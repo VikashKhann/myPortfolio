@@ -1,0 +1,56 @@
+#works {
+  min-height: calc(100vh - 4rem);
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.worksTitle {
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.worksDesc {
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 55rem;
+}
+
+.worksImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 65rem; /*my code*/
+  margin-top: 3rem;
+}
+
+.workImg {
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+}
+
+.workBtn {
+  background: white;
+  color: black;
+  padding: 0.5rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin: 3rem 0rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 585px) {
+  .workImg {
+    height: 48vw;
+  }
+}

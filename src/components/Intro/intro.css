@@ -1,0 +1,156 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#socials-container {
+  display: flex;
+  padding: 0rem 7.5rem;
+  /* justify-content: center; */
+  /* margin-top: 1rem; */
+  /* margin-left: 9vw; */
+  gap: 1rem;
+}
+
+/* my profile pic settings below*/
+
+.bg {
+  position: absolute;
+  margin-right: 4rem;
+  top: 0rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 90vh;
+  /* transition: top 1s; */
+}
+
+.bgBackground {
+  position: absolute;
+  margin-right: 2rem;
+  top: 1rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 73vh;
+  /* transition: top 1s; */
+}
+
+/* .bgBackground:hover {
+  top: 40px;
+} */
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.introName {
+  color: rgb(234, 160, 31);
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: white;
+  /* margin: 1rem 0rem; */
+  /* padding: 0.75rem 1.5rem; */
+  transition: all 300ms ease;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 10rem;
+  font-weight: 600;
+}
+
+.downloadBtn {
+  background: white;
+  /* margin: 1rem 0rem; */
+  /* padding: 0.75rem 1.5rem; */
+  transition: all 300ms ease;
+  /* padding: 0.75rem; */
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 10rem;
+  font-weight: 600;
+}
+
+.btnImg {
+  object-fit: cover;
+  margin: 0rem 0.25rem;
+  height: 1rem;
+}
+
+.btnscont {
+  /* padding: 0rem 1rem; */
+  display: flex;
+  gap: 0.74rem;
+}
+.buttongrp {
+  /* max-width: 24vw; */
+  display: flex;
+  /* padding: 1rem 1rem; */
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+@media screen and (max-width: 1200px) {
+  .bg,
+  .bgBackground {
+    right: -5vw;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .bg,
+  .bgBackground {
+    right: -12vw;
+  }
+  .bgBackground {
+    /* height: 67vh;
+    top: 2.5rem; */
+    visibility: hidden;
+  }
+
+  .introContent {
+    font-size: 10vw;
+  }
+
+  .hello {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bg,
+  .bgBackground {
+    right: -25vw;
+  }
+  .bgBackground {
+    top: 3rem;
+    height: 67vh;
+  }
+}
