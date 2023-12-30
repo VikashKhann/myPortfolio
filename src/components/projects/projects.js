@@ -48,7 +48,7 @@ const Projects = () => {
                 className="btn btn-color-2 project-btn"
                 onClick={() =>
                   window.open(
-                    "https://github.com/VikashKhann/BMI-calulator",
+                    "https://github.com/VikashKhann/Pizzeria",
                     "_blank"
                   )
                 }
