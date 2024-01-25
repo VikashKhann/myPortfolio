@@ -39,10 +39,13 @@
 
 .contactDesc {
   padding: 1rem;
-  font-size: medium;
-  font-weight: 300;
+  font-size: 1.05rem;
+  font-weight: 350;
 }
 
+.contactDesc.lightMode {
+  color: grey;
+}
 .contactForm {
   margin: 1rem;
   display: flex;
@@ -66,7 +69,15 @@
   border-radius: 0.5rem;
   background: rgb(40, 40, 40);
 }
-
+.name.lightMode,
+.email.lightMode,
+.msg.lightMode {
+  color: black;
+  background-color: white;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .submitBtn {
   background: white;
   border: none;
@@ -74,6 +85,11 @@
   border-radius: 0.5rem;
   margin: 2rem;
   cursor: pointer;
+}
+
+.submitBtn.lightMode {
+  background: black;
+  color: white;
 }
 
 .links {

@@ -1,5 +1,14 @@
+.darkModeToggle {
+  position: fixed;
+  top: 86.5vh; /* Adjust the top value based on your design preference */
+  right: 2.5rem; /* Adjust the left value based on your design preference */
+  z-index: 4; /* Ensure it's above the navbar and other elements */
+}
 .navbar {
-  background: rgb(30, 30, 30);
+  transition: background 0.75s, color 0.5s;
+  /* background: rgb(30, 30, 30); */
+  /* background: ${props => (props.darkMode ? "rgb(30, 30, 30)" : "white")};
+  color: ${props => (props.darkMode ? "white" : "black")}; */
   height: 5rem;
   width: 100vw;
   margin: 0 auto;
@@ -13,6 +22,55 @@
   z-index: 3;
 }
 
+.navbar.darkMode {
+  background: rgb(30, 30, 30);
+  color: white;
+}
+
+.desktopMenuLinkItem.darkMode:hover {
+  color: rgb(234, 160, 31);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(234, 160, 31);
+}
+
+.desktopMenuBtn.darkMode {
+  background: white;
+  color: black;
+}
+
+.active.darkMode {
+  color: rgb(234, 160, 31);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(234, 160, 31);
+}
+
+/* Light mode specific styles */
+.navbar.lightMode {
+  background: white;
+  color: black;
+}
+
+.desktopMenuLinkItem.lightMode:hover {
+  color: grey;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(181, 181, 181);
+}
+
+.active.lightMode {
+  color: grey;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid rgb(181, 181, 181);
+}
+
+.desktopMenuBtn.lightMode {
+  background: rgb(53, 53, 53);
+  /* background: black; */
+  color: white;
+}
+
+.desktopMenuBtn.lightMode:hover {
+  background: black;
+}
 .logo {
   object-fit: cover;
   height: 3rem;
@@ -24,13 +82,14 @@
   cursor: pointer;
 }
 
-.desktopMenuLinkItem:hover {
+/* .desktopMenuLinkItem:hover {
   color: rgb(234, 160, 31);
   padding-bottom: 0.5rem;
   border-bottom: 3px solid rgb(234, 160, 31);
-}
+} */
 
 .desktopMenuBtn {
+  transition: background 0.5s, color 0.5s;
   background: white;
   color: black;
   border: none;
@@ -49,11 +108,11 @@
   margin: 1rem;
 }
 
-.active {
+/* .active {
   color: rgb(234, 160, 31);
   padding-bottom: 0.5rem;
   border-bottom: 3px solid rgb(234, 160, 31);
-}
+} */
 
 .navMenu {
   position: absolute;
@@ -69,11 +128,20 @@
   border-radius: 1rem;
 }
 
+.navMenu.lightMode {
+  background: rgb(236, 236, 236);
+  color: black;
+}
+
 .linkItem {
   color: white;
   padding: 0.5rem 3rem;
   margin: 0.25rem;
   background: rgb(30, 30, 30);
+}
+
+.linkItem.lightMode {
+  background: rgb(193, 191, 191);
 }
 
 .mobMenu {

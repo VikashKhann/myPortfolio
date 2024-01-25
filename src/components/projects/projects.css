@@ -33,6 +33,18 @@
   margin-bottom: 2rem;
 }
 
+.experienceDesc {
+  font-size: 1.1rem;
+  font-weight: 350;
+  /* max-width: 50rem; */
+  padding: 0 1rem;
+  padding-top: 1rem;
+}
+
+.experienceDesc.lightMode {
+  color: grey;
+}
+
 /* .btn-container {
   display: flex;
   justify-content: center;
@@ -85,4 +97,10 @@
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+}
+
+@media screen and (max-width: 400px) {
+  .article-container {
+    gap: 1.5rem;
+  }
 }

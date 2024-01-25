@@ -13,17 +13,20 @@
 .certificateTitle {
   font-size: 3rem;
   font-weight: 600;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .certificateDesc {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 350;
   /* max-width: 50rem; */
   padding: 0 1rem;
 }
 
+.certificateDesc.lightMode {
+  color: grey;
+}
 .certificateBars {
   margin: 1.5rem;
   width: 100vw;
@@ -43,6 +46,19 @@
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   display: flex;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.certificateBar:hover {
+  transform: translateY(-5px);
+}
+
+.certificateBar.lightMode {
+  background: white;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .certificateBarImg {
@@ -54,8 +70,12 @@
 }
 
 .certificateBarText > p {
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 1.05rem;
+  font-weight: 350;
+}
+
+.certificateBarText.lightMode > p {
+  color: grey;
 }
 
 @media screen and (max-width: 720px) {

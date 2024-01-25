@@ -8,3 +8,10 @@
   font-weight: 300;
   font-size: small;
 }
+
+.footer.lightMode {
+  background-color: white;
+  color: grey;
+  font-weight: 500;
+  font-size: large;
+}

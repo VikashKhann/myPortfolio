@@ -6,7 +6,7 @@ import twitterIcon from "../../assets/twitter.png";
 import youtubeIcon from "../../assets/youtube.png";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+const Contact = ({ darkMode }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -33,37 +33,41 @@ const Contact = () => {
     <section id="contactPage">
       <div id="contact">
         <h1 className="contactPageTitle">Contact Me</h1>
-        <span className="contactDesc">
+        <span className={`contactDesc ${darkMode ? "darkmode" : "lightMode"}`}>
           Please fill out the form below to discuss any work oppurtunity
         </span>
         <form ref={form} onSubmit={sendEmail} action="" className="contactForm">
           <input
             type="text"
-            className="name"
+            className={`name ${darkMode ? "darkmode" : "lightMode"}`}
             placeholder="Your Name"
             name="from_name"
           />
           <input
             type="email"
-            className="email"
+            className={`email ${darkMode ? "darkmode" : "lightMode"}`}
             placeholder="Your Email"
             name="from_email"
           />
           <textarea
             name="message"
             rows="5"
-            className="msg"
+            className={`msg ${darkMode ? "darkmode" : "lightMode"}`}
             placeholder="Your Message"
           ></textarea>
-          <button className="submitBtn" type="submit" value="Send">
+          <button
+            className={`submitBtn ${darkMode ? "darkmode" : "lightMode"}`}
+            type="submit"
+            value="Send"
+          >
             Submit
           </button>
-          <div className="links">
+          {/* <div className="links">
             <img src={facebookIcon} alt="Facebook" className="link" />
             <img src={instagramIcon} alt="Instagram" className="link" />
             <img src={twitterIcon} alt="Twitter" className="link" />
             <img src={youtubeIcon} alt="Youtube" className="link" />
-          </div>
+          </div> */}
         </form>
       </div>
     </section>

@@ -1,11 +1,14 @@
 import React from "react";
 import "./experience.css";
-import checkmark from "../../assets/checkmark.png";
+import darkModecheckmark from "../../assets/checkmark.png";
+import lightModecheckmark from "../../assets/checkmark1.png";
 
-const Experience = () => {
+const Experience = ({ darkMode }) => {
   return (
-    <section id="experience">
-      <h1 className="title">Experience</h1>
+    <section className={`experience ${darkMode ? "darkMode" : "lightMode"}`}>
+      <h1 className={`title ${darkMode ? "darkMode" : "lightMode"}`}>
+        Experience
+      </h1>
       <span className="experienceDesc">
         Aspiring full-stack developer crafting immersive digital experiences.
         Join me on this coding journey, seamlessly blending design and
@@ -14,46 +17,74 @@ const Experience = () => {
       </span>
       <div className="experience-details-container">
         <div className="about-containers">
-          <div className="details-container">
+          <div
+            className={`details-container ${
+              darkMode ? "darkMode" : "lightMode"
+            }`}
+          >
             <h2 className="experience-sub-title">Frontend Development</h2>
             <div className="article-container">
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>HTML</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>CSS</h3>
                   <p>Experienced</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>Angular</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>React</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>TypeScript</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>JavaScript</h3>
                   <p>Intermediate</p>
@@ -61,46 +92,74 @@ const Experience = () => {
               </article>
             </div>
           </div>
-          <div className="details-container">
+          <div
+            className={`details-container ${
+              darkMode ? "darkMode" : "lightMode"
+            }`}
+          >
             <h2 className="experience-sub-title">Backend Development</h2>
             <div className="article-container">
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>DotNet</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>Node JS</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>Express JS</h3>
                   <p>Basic</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>Git</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>Python</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
               <article>
-                <img src={checkmark} alt="Experience icon" className="icon" />
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
                 <div>
                   <h3>RDBMS</h3>
                   <p>Basic</p>

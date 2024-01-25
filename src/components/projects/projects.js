@@ -1,15 +1,15 @@
 import React from "react";
 import "./projects.css";
 import project1 from "../../assets/project-1.png";
-import project2 from "../../assets/project-2.png";
-import project3 from "../../assets/project-3.png";
+import project3 from "../../assets/project-2.png";
+import project2 from "../../assets/project-3.png";
 
-const Projects = () => {
+const Projects = ({ darkMode }) => {
   return (
     <section id="projects">
       {/* <p className="section__text__p1">Browse My Recent</p> */}
       <h1 className="title">Projects</h1>
-      <span className="experienceDesc">
+      <span className={`experienceDesc ${darkMode ? "darkMode" : "lightMode"}`}>
         Dive into my coding world with a click. This section showcases my
         diverse projects, ranging from my React-powered portfolio to a
         full-stack Pizza Ordering app (Angular, Express, Node, MongoDB) and a
@@ -19,7 +19,11 @@ const Projects = () => {
       </span>
       <div className="experience-details-container">
         <div className="about-containers">
-          <div className="details-container color-container">
+          <div
+            className={`details-container color-container ${
+              darkMode ? "darkMode" : "lightMode"
+            }`}
+          >
             <div className="article-container">
               <img src={project1} alt="Project 1" className="project-img" />
             </div>
@@ -38,7 +42,11 @@ const Projects = () => {
               </button>
             </div>
           </div>
-          <div className="details-container color-container">
+          <div
+            className={`details-container color-container ${
+              darkMode ? "darkMode" : "lightMode"
+            }`}
+          >
             <div className="article-container">
               <img src={project2} alt="Project 2" className="project-img" />
             </div>
@@ -57,17 +65,21 @@ const Projects = () => {
               </button>
             </div>
           </div>
-          <div className="details-container color-container">
+          <div
+            className={`details-container color-container ${
+              darkMode ? "darkMode" : "lightMode"
+            }`}
+          >
             <div className="article-container">
               <img src={project3} alt="Project 3" className="project-img" />
             </div>
-            <h2 className="experience-sub-title project-title">BMI</h2>
+            <h2 className="experience-sub-title project-title">To-Do List</h2>
             <div className="btn-container">
               <button
                 className="btn btn-color-2 project-btn"
                 onClick={() =>
                   window.open(
-                    "https://github.com/VikashKhann/BMI-calulator",
+                    "https://github.com/VikashKhann/todoapp",
                     "_blank"
                   )
                 }

@@ -1,0 +1,13 @@
+.rootClass {
+  transition: background 0.75s, color 0.5s;
+}
+
+.rootClass.darkMode {
+  background: rgb(30, 30, 30);
+  color: white;
+}
+
+.rootClass.lightMode {
+  background: white;
+  color: black;
+}
