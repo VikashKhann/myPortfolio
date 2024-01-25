@@ -22,6 +22,8 @@ const Contact = ({ darkMode }) => {
       .then(
         (result) => {
           console.log(result.text);
+          alert("Submitted succeessfully!!");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
