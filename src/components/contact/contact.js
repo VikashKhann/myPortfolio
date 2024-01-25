@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import facebookIcon from "../../assets/facebook-icon.png";
-import instagramIcon from "../../assets/instagram.png";
-import twitterIcon from "../../assets/twitter.png";
-import youtubeIcon from "../../assets/youtube.png";
+// import facebookIcon from "../../assets/facebook-icon.png";
+// import instagramIcon from "../../assets/instagram.png";
+// import twitterIcon from "../../assets/twitter.png";
+// import youtubeIcon from "../../assets/youtube.png";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ darkMode }) => {
