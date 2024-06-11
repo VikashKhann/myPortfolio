@@ -54,7 +54,7 @@ const Experience = ({ darkMode }) => {
                 />
                 <div>
                   <h3>Angular</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -65,7 +65,7 @@ const Experience = ({ darkMode }) => {
                 />
                 <div>
                   <h3>React</h3>
-                  <p>Intermediate</p>
+                  <p>Basic</p>
                 </div>
               </article>
               <article>
@@ -76,7 +76,7 @@ const Experience = ({ darkMode }) => {
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -87,7 +87,7 @@ const Experience = ({ darkMode }) => {
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Intermediate</p>
+                  <p>Experienced</p>
                 </div>
               </article>
             </div>
@@ -107,7 +107,7 @@ const Experience = ({ darkMode }) => {
                 />
                 <div>
                   <h3>DotNet</h3>
-                  <p>Basic</p>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -128,8 +128,8 @@ const Experience = ({ darkMode }) => {
                   className="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Basic</p>
+                  <h3>API</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -140,6 +140,17 @@ const Experience = ({ darkMode }) => {
                 />
                 <div>
                   <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src={darkMode ? darkModecheckmark : lightModecheckmark}
+                  alt="Experience icon"
+                  className="icon"
+                />
+                <div>
+                  <h3>C#</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -150,19 +161,8 @@ const Experience = ({ darkMode }) => {
                   className="icon"
                 />
                 <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src={darkMode ? darkModecheckmark : lightModecheckmark}
-                  alt="Experience icon"
-                  className="icon"
-                />
-                <div>
-                  <h3>RDBMS</h3>
-                  <p>Basic</p>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
             </div>
