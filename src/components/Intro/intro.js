@@ -37,10 +37,10 @@ const Intro = ({ darkMode }) => {
             Vikash
           </span>
           <br />
-          Web Developer
+          Software Engineer
         </span>
         <p className="introPara">
-          I'm a skilled and passionate Front-End developer with experience
+          I'm a skilled and passionate Fullstack developer with experience
           <br />
           in creating visually appealing and user-friendly wesbites
         </p>
